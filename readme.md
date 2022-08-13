@@ -10,4 +10,31 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+### Clone the Project Repo
+Clone the repo by running:
+```
+$ gh repo clone ObelusFamily/Anythink-Market-5sj3n
+```
+
+### Install Docker
+
+Install Docker by following the instructions [here](https://docs.docker.com/get-docker/).
+
+### Verify Docker Installation
+Run the bellow commands to verify the installation was successful.
+
+```
+$ docker -v
+$ docker-compose -v
+```
+You should see the installed versions if the installation was successful.
+
+### Build and Start the Containers
+Navigate to the project director and run:
+```
+# docker-compose up
+```
+
+### Verify Startup
+Navigate to http://localhost:3000/api/ping to verify the application is up and
+running. Go to http://localhost:3001/register and create a new user.
